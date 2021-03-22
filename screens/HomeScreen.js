@@ -31,10 +31,9 @@ export default class HomeScreen extends Component{
     })
     .then((response)=>{
         //console.log(response)
-
         var responseObject = response
-        //var word = responseObject.word
-        //var lexicalCategory = responseObject.results[0].lexicalEntries[0].lexicalCategory.text
+        var word = responseObject.word
+        var lexicalCategory = responseObject.results[0].lexicalEntries[0].lexicalCategory.text
         if(responseObject)
         {
           var wordData = responseObject.definitions[0]
